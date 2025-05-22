@@ -14,13 +14,12 @@ class AudioController {
     }
     
     createAudioElement(name, loop = false) {
-        // In a real implementation, you would have actual audio files
-        // For now, we'll create audio elements that will be ready to use when files are added
+        // Create audio element with source
         const audio = document.createElement('audio');
         audio.id = `sound-${name}`;
         
-        // When actual audio files are added, uncomment this line:
-        // audio.src = `assets/audio/${name}.mp3`;
+        // Set the audio source
+        audio.src = `assets/audio/${name}.mp3`;
         
         if (loop) {
             audio.loop = true;

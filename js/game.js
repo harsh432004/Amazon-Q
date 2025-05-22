@@ -3,7 +3,7 @@ class Game {
     constructor() {
         this.canvas = document.getElementById('game-canvas');
         this.levelNumber = 1;
-        this.maxLevels = 3; // Total number of levels
+        this.maxLevels = 6; // Total number of levels
         this.keysCollected = 0;
         this.keysTotal = 0;
         this.gravity = { x: 0, y: 1 }; // Default gravity: down

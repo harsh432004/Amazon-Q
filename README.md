@@ -10,7 +10,7 @@ In Gravity Shifter, you control a character who can manipulate gravity in four d
 
 - **Unique Gravity Mechanics**: Change gravity direction to solve puzzles in creative ways
 - **Physics-Based Gameplay**: Objects and the player respond realistically to gravity shifts
-- **Multiple Levels**: Progressively challenging levels with unique layouts
+- **Multiple Levels**: Six progressively challenging levels with unique layouts
 - **Visual Effects**: Particle effects for gravity shifts and key collection
 - **Sound Effects**: Audio feedback for player actions
 - **Responsive Design**: Playable on both desktop and mobile devices
@@ -32,18 +32,23 @@ In Gravity Shifter, you control a character who can manipulate gravity in four d
      - Python 3: `python -m http.server`
      - Python 2: `python -m SimpleHTTPServer`
 
-## Adding Sound Effects
+## Sound Effects
 
-The game is set up to use sound effects, but the actual audio files need to be added:
+The game includes the following sound effects:
+- Gravity shift sound
+- Key collection sound
+- Door unlock sound
+- Level completion sound
+- Background music
 
-1. Create the following audio files in MP3 format:
-   - `gravity-shift.mp3`
-   - `collect.mp3`
-   - `door-unlock.mp3`
-   - `win.mp3`
-   - `background-music.mp3`
-2. Place these files in the `assets/audio/` directory
-3. Uncomment the audio source line in the `createAudioElement` method in `audio.js`
+## Level Descriptions
+
+1. **Introduction**: Learn the basics of gravity shifting
+2. **Platform Hopping**: Navigate between floating platforms
+3. **Enclosed Challenge**: Maneuver through a complex enclosed space
+4. **Maze Challenge**: Find your way through a gravity-defying maze
+5. **Gravity Chambers**: Navigate through multiple connected chambers
+6. **Orbital Challenge**: Master gravity control to orbit around obstacles
 
 ## Customization
 

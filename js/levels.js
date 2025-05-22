@@ -63,5 +63,97 @@ const levels = [
             { x: 200, y: 50 }
         ],
         door: { x: 650, y: 50, width: 40, height: 50 }
+    },
+    
+    // Level 4 - Maze Challenge
+    {
+        player: { x: 50, y: 50 },
+        platforms: [
+            { x: 0, y: 580, width: 800, height: 20 },    // Bottom
+            { x: 0, y: 0, width: 20, height: 600 },      // Left
+            { x: 780, y: 0, width: 20, height: 600 },    // Right
+            { x: 0, y: 0, width: 800, height: 20 },      // Top
+            // Maze walls
+            { x: 100, y: 100, width: 20, height: 400 },
+            { x: 100, y: 100, width: 600, height: 20 },
+            { x: 200, y: 200, width: 400, height: 20 },
+            { x: 200, y: 200, width: 20, height: 200 },
+            { x: 300, y: 300, width: 400, height: 20 },
+            { x: 600, y: 200, width: 20, height: 300 },
+            { x: 400, y: 400, width: 20, height: 100 },
+            { x: 300, y: 400, width: 200, height: 20 }
+        ],
+        keys: [
+            { x: 150, y: 150 },
+            { x: 550, y: 150 },
+            { x: 650, y: 350 },
+            { x: 350, y: 450 }
+        ],
+        door: { x: 700, y: 500, width: 40, height: 50 }
+    },
+    
+    // Level 5 - Gravity Chambers
+    {
+        player: { x: 400, y: 300 },
+        platforms: [
+            { x: 0, y: 580, width: 800, height: 20 },    // Bottom
+            { x: 0, y: 0, width: 20, height: 600 },      // Left
+            { x: 780, y: 0, width: 20, height: 600 },    // Right
+            { x: 0, y: 0, width: 800, height: 20 },      // Top
+            // Chambers
+            { x: 100, y: 100, width: 600, height: 20 },
+            { x: 100, y: 100, width: 20, height: 400 },
+            { x: 100, y: 500, width: 600, height: 20 },
+            { x: 700, y: 100, width: 20, height: 400 },
+            // Inner walls
+            { x: 250, y: 100, width: 20, height: 150 },
+            { x: 250, y: 350, width: 20, height: 150 },
+            { x: 400, y: 100, width: 20, height: 150 },
+            { x: 400, y: 350, width: 20, height: 150 },
+            { x: 550, y: 100, width: 20, height: 150 },
+            { x: 550, y: 350, width: 20, height: 150 }
+        ],
+        keys: [
+            { x: 175, y: 175 },
+            { x: 325, y: 175 },
+            { x: 475, y: 175 },
+            { x: 625, y: 175 },
+            { x: 175, y: 425 },
+            { x: 325, y: 425 },
+            { x: 475, y: 425 },
+            { x: 625, y: 425 }
+        ],
+        door: { x: 400, y: 250, width: 40, height: 50 }
+    },
+    
+    // Level 6 - Orbital Challenge
+    {
+        player: { x: 400, y: 300 },
+        platforms: [
+            { x: 0, y: 580, width: 800, height: 20 },    // Bottom
+            { x: 0, y: 0, width: 20, height: 600 },      // Left
+            { x: 780, y: 0, width: 20, height: 600 },    // Right
+            { x: 0, y: 0, width: 800, height: 20 },      // Top
+            // Center platform
+            { x: 350, y: 250, width: 100, height: 100 },
+            // Orbital platforms
+            { x: 150, y: 150, width: 100, height: 20 },
+            { x: 550, y: 150, width: 100, height: 20 },
+            { x: 150, y: 430, width: 100, height: 20 },
+            { x: 550, y: 430, width: 100, height: 20 },
+            // Obstacles
+            { x: 300, y: 100, width: 20, height: 100 },
+            { x: 480, y: 100, width: 20, height: 100 },
+            { x: 300, y: 400, width: 20, height: 100 },
+            { x: 480, y: 400, width: 20, height: 100 }
+        ],
+        keys: [
+            { x: 200, y: 130 },
+            { x: 600, y: 130 },
+            { x: 200, y: 450 },
+            { x: 600, y: 450 },
+            { x: 390, y: 290 }
+        ],
+        door: { x: 400, y: 50, width: 40, height: 50 }
     }
 ];
