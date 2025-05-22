@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Shifter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-canvas"></div>
+        <div class="controls">
+            <div class="gravity-controls">
+                <button id="gravity-up" class="gravity-btn">↑</button>
+                <button id="gravity-right" class="gravity-btn">→</button>
+                <button id="gravity-down" class="gravity-btn">↓</button>
+                <button id="gravity-left" class="gravity-btn">←</button>
+            </div>
+            <div class="game-info">
+                <div class="level">Level: <span id="level-number">1</span></div>
+                <div class="keys">Keys: <span id="keys-collected">0</span>/<span id="keys-total">0</span></div>
+            </div>
+        </div>
+        <div id="start-screen" class="overlay">
+            <h1>Gravity Shifter</h1>
+            <p>Change gravity direction to navigate through puzzles</p>
+            <button id="start-button">Start Game</button>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Use arrow keys or buttons to change gravity direction</p>
+                <p>Collect all keys to unlock the exit door</p>
+                <p>Reach the exit door to complete each level</p>
+            </div>
+        </div>
+        <div id="level-complete" class="overlay hidden">
+            <h2>Level Complete!</h2>
+            <p>You collected all keys and reached the exit!</p>
+            <button id="next-level">Next Level</button>
+        </div>
+        <div id="game-over" class="overlay hidden">
+            <h2>Game Over</h2>
+            <p>You completed all levels!</p>
+            <button id="restart-game">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/physics.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
